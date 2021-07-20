@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio | Platzi Video</title>
     <style>
       body {
         margin: 0;
         background-color: #ab88ff;
+        font-family: "Mulish", sans-serif;
       }
       .header {
         width: 100%;
         height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       .header__img {
         width: 200px;
@@ -20,7 +30,7 @@
         margin-inline-start: 10px;
       }
       .header__menu {
-        margin-inline-end: 30px;
+        margin-inline-end: 60px;
       }
       .header__menu ul {
         display: none;
@@ -31,9 +41,33 @@
         text-align: right;
         margin: 0 0 0 -14px;
       }
+      .header__menu:hover ul,
+      .header__menu ul:hover {
+        display: block;
+      }
+      .header__menu li {
+        margin: 10px 0;
+      }
+      .header__menu li a {
+        color: white;
+        text-decoration: none;
+      }
+      .header__menu li a:hover {
+        text-decoration: underline;
+      }
       .header__menu--profile {
         margin-right: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .header__menu--profile img {
+        margin-right: 8px;
         width: 40px;
+        height: 40px;
+      }
+      .header__menu--profile p {
+        margin: 0;
+        color: white;
       }
     </style>
   </head>
@@ -45,7 +79,7 @@
         alt="Logo de Platzi Video"
       />
       <div class="header__menu">
-        <div class="header__manu--profile">
+        <div class="header__menu--profile">
           <img src="../assets/user-icon.png" alt="user profile icon" />
           <p>Perfil</p>
         </div>

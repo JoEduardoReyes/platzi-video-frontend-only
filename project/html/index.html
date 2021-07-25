@@ -10,95 +10,11 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Inicio | Platzi Video</title>
-    <style>
-      body {
-        margin: 0;
-        background-color: #8f57fd;
-        font-family: "Mulish", sans-serif;
-      }
-      .header {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .header__img {
-        width: 200px;
-        margin-block-start: 10px;
-        margin-inline-start: 10px;
-      }
-      .header__menu {
-        margin-inline-end: 60px;
-      }
-      .header__menu ul {
-        display: none;
-        list-style: none;
-        padding: 0;
-        position: absolute;
-        width: 100px;
-        text-align: right;
-        margin: 0 0 0 -14px;
-      }
-      .header__menu:hover ul,
-      .header__menu ul:hover {
-        display: block;
-      }
-      .header__menu li {
-        margin: 10px 0;
-      }
-      .header__menu li a {
-        color: white;
-        text-decoration: none;
-      }
-      .header__menu li a:hover {
-        text-decoration: underline;
-      }
-      .header__menu--profile {
-        margin-right: 8px;
-        display: flex;
-        align-items: center;
-      }
-      .header__menu--profile img {
-        margin-right: 8px;
-        width: 40px;
-        height: 40px;
-      }
-      .header__menu--profile p {
-        margin: 0;
-        color: white;
-      }
-      /* Search bar */
-      .main {
-        height: 300px;
-      }
-      .main__title {
-        color: white;
-        font-size: 25px;
-      }
-      .input {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        border-radius: 25px;
-        color: white;
-        font-family: "Mulish", sans-serif;
-        font-size: 16px;
-        height: 50px;
-        padding: 0 20px;
-        width: 70%;
-      }
-      .input::placeholder {
-        color: white;
-      }
-      .input:focus {
-        border: 2px solid white;
-        outline: none;
-        transition: 300ms;
-      }
-    </style>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <img
         class="header__img"
@@ -116,9 +32,14 @@
         </ul>
       </div>
     </header>
+    <!-- /header -->
+    <!-- search bar -->
     <section class="main">
       <h2 class="main__title">Que quieres ver hoy?</h2>
       <input type="text" placeholder="Buscar..." class="input" />
     </section>
+    <!-- /searchbar -->
+    <!-- categories -->
+    <h2 class="categories__title">Mi lista</h2>
   </body>
 </html>

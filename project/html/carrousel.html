@@ -47,20 +47,40 @@
         max-width: 100%;
       }
       .carrousel-item__details {
-        background: linear-gradient(
-          to top,
-          rgba (0, 0, 0, 0.9) 0%,
-          rgba (0, 0, 0, 0) 100%
-        );
-        font-size: 0px;
-        /* opacity: 0; */
+        opacity: 0%;
+        background: linear-gradient(transparent 50%, black 98%);
+        font-size: 12px;
         transition: 450ms opacity;
-        padding: 10px;
+        padding: 15px;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        height: 100%;
+        width: 100%;
+        color: white;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .carrousel-item__details img {
+        width: 30px;
+      }
+
+      .carroursel-item__details--title {
+        font-size: 14px;
+        padding: 0;
+        margin: 8px 0 0 0;
+      }
+      .carroursel-item__details--subtitle {
+        font-size: 14px;
+        padding: 0;
+        margin: 5px 0 0 0px;
+      }
+      .carrousel-item__details:hover {
+        opacity: 100%;
       }
     </style>
   </head>
